@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AES</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>AES 256 bits Encryption</h2>
+    <div id="main">
+    <div class="container">
+      <div class="input">
+        <label id="lblinput" for="plaintext">Plaintext</label>
+        <textarea name="" id="plaintext" cols="32" rows="3"></textarea>
+        <div id="encrypt">Encrypt</div>
+        <div class="clear-fix"></div>
+        <br /><br />
+      </div>
+     
+    </div>
+    <div class="result">
+      <h3>Result</h3>
+      <hr />
+      <br />
+      <p class="plain">Plaintext :</p>
+      <textarea name="" id="plain" cols="32" rows="2"></textarea>
+      <br />
+
+      <p class="pass">Random Password (256bits):</p>
+      <input type="text" id="pass"></input>
+      <br />
+      <p class="cipher">Ciphertext :</p>
+      <textarea name="" id="cipher" cols="30" rows="5"></textarea>
+      <br>
+      <div id="reset">Reset</div>
+      
+    </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.rawgit.com/ricmoo/aes-js/e27b99df/index.js"></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
